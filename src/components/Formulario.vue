@@ -104,7 +104,7 @@ export default {
 
   methods: {
 
-    //envio los datos del formulario al backend con AXIOS- POST
+    //Envio los datos del formulario al backend con AXIOS- POST
     async sendDatosForm(datos) {
       try {
         let response = await this.axios.post(this.url, datos, {
@@ -116,7 +116,7 @@ export default {
       }
     },
 
-    // SUBMIT DEL FORM
+    // SUBMIT DEL FORMULARIO
     enviar() {
       let datosForm = {
         nombre: this.$v.f.nombre.$model,
